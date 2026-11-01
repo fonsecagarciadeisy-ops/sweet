@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sweet Love: restaurante internacional con platos típicos, comidas saludables, carnes, postres y bebidas.">
+<meta name="theme-color" content="#f5a1c5">
+<title>Sweet Love | Sabores del mundo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+ <div class="announcement">🌸 SABORES DEL MUNDO, PREPARADOS CON AMOR · ¡BIENVENIDA A SWEET LOVE! 🌸</div>
+ <div class="nav-wrap container">
+  <a class="brand" href="#inicio" aria-label="Sweet Love, inicio"><span class="brand-icon">♡</span><span>Sweet <b>Love</b><small>UN VIAJE DE SABOR</small></span></a>
+  <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#menu">Menú</a><a href="#paises">Por el mundo</a><a href="#nosotros">Nosotros</a></nav>
+  <button class="cart-button" id="openCart" type="button" aria-label="Abrir carrito"><span>🛍️</span><span class="cart-label">Mi carrito</span><span class="cart-count" id="cartCount" aria-live="polite">0</span></button>
+ </div>
+</header>
+<main id="contenido">
+ <section class="hero container" id="inicio">
+  <div class="hero-copy"><span class="eyebrow">DE COLOMBIA PARA EL MUNDO ✨</span><h1>Un mundo de sabores <span>enamorados.</span></h1>
+   <p>Viaja con tu paladar: platos típicos, ensaladas frescas, carnes, hamburguesas, postres y bebidas para todos tus antojos.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#menu">Explorar el menú <span>→</span></a><a class="text-link" href="#paises">Descubrir países ♡</a></div>
+   <div class="hero-note"><span class="note-heart">♥</span><span><b>Muchos destinos,</b><br>un solo lugar delicioso.</span></div>
+  </div>
+  <div class="hero-visual"><div class="hero-blob"></div><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1100&q=85" alt="Mesa con una selección colorida de comida y vegetales frescos"><span class="floating-sticker sticker-top">YUMMY!</span><span class="floating-sticker sticker-bottom">♡ sabores con amor ♡</span><span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span></div>
+ </section>
+ <section class="country-section container" id="paises">
+  <div class="section-heading centered"><span class="eyebrow">PASAPORTE GASTRONÓMICO 🌎</span><h2>¿A dónde viajamos hoy?</h2><p>Escoge un destino y descubre sus sabores.</p></div>
+  <div class="country-grid">
+   <button class="country-card" data-country="Colombia"><span>🇨🇴</span><b>Colombia</b></button>
+   <button class="country-card" data-country="México"><span>🇲🇽</span><b>México</b></button>
+   <button class="country-card" data-country="Estados Unidos"><span>🇺🇸</span><b>Estados Unidos</b></button>
+   <button class="country-card" data-country="Grecia · Santorini"><span>🇬🇷</span><b>Grecia / Santorini</b></button>
+   <button class="country-card" data-country="Polonia"><span>🇵🇱</span><b>Polonia</b></button>
+   <button class="country-card" data-country="Rusia"><span>🇷🇺</span><b>Rusia</b></button>
+   <button class="country-card" data-country="Internacional"><span>🥗</span><b>Internacional</b></button>
+  </div>
+ </section>
+ <section class="category-section container" aria-labelledby="categoryTitle">
+  <div class="section-heading centered"><span class="eyebrow">ALGO RICO PARA CADA ANTOJO</span><h2 id="categoryTitle">Explora por categoría</h2><p>Desde algo ligero hasta un postre para consentirte.</p></div>
+  <div class="category-grid">
+   <button class="category-card active" data-category="Todos"><span>🍓</span><b>Todo</b><small>Menú completo</small></button>
+   <button class="category-card" data-category="Platos típicos"><span>🍽️</span><b>Platos típicos</b><small>Vuelta al mundo</small></button>
+   <button class="category-card" data-category="Saludables"><span>🥗</span><b>Saludables</b><small>Fresco y balanceado</small></button>
+   <button class="category-card" data-category="Carnes"><span>🥩</span><b>Carnes</b><small>A la parrilla y más</small></button>
+   <button class="category-card" data-category="Hamburguesas"><span>🍔</span><b>Hamburguesas</b><small>Clásicas y especiales</small></button>
+   <button class="category-card" data-category="Entradas"><span>🥑</span><b>Entradas</b><small>Para comenzar</small></button>
+   <button class="category-card" data-category="Postres"><span>🍰</span><b>Postres</b><small>Un toque dulce</small></button>
+   <button class="category-card" data-category="Bebidas"><span>🍋</span><b>Bebidas</b><small>Frescas y frutales</small></button>
+  </div>
+ </section>
+ <section class="menu-section" id="menu"><div class="container">
+  <div class="section-heading menu-heading"><div><span class="eyebrow">HECHO PARA DISFRUTAR 💕</span><h2>Nuestro menú internacional</h2><p>Fotografías, ingredientes y acompañamientos de cada plato.</p></div><label class="search-box"><span>⌕</span><span class="sr-only">Buscar productos</span><input id="searchInput" type="search" placeholder="Busca un plato, país o ingrediente..."></label></div>
+  <div class="filter-row" id="filterRow"><button class="filter-chip active" data-filter="Todos">Todos</button><button class="filter-chip" data-filter="Platos típicos">Platos típicos</button><button class="filter-chip" data-filter="Saludables">Saludables</button><button class="filter-chip" data-filter="Carnes">Carnes</button><button class="filter-chip" data-filter="Hamburguesas">Hamburguesas</button><button class="filter-chip" data-filter="Entradas">Entradas</button><button class="filter-chip" data-filter="Postres">Postres</button><button class="filter-chip" data-filter="Bebidas">Bebidas</button></div>
+  <div class="active-filter" id="activeFilter"></div><div class="product-grid" id="productGrid" aria-live="polite"></div><p class="empty-state hidden" id="emptyState">No encontramos ese antojito. Prueba con otra búsqueda. 💗</p>
+ </div></section>
+ <section class="promo-section container"><div class="promo-card"><div class="promo-copy"><span class="eyebrow">UN ANTOJO, MUCHOS DESTINOS</span><h2>Come rico.<br><span>Siéntete feliz.</span></h2><p>Arma tu combinación favorita: plato principal, acompañamiento y bebida.</p><a class="btn btn-light" href="#menu">Elegir mis favoritos →</a></div><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=85" alt="Ensalada fresca y colorida con vegetales variados"><span class="promo-decoration">sweet ♡</span></div></section>
+ <section class="about-section container" id="nosotros"><div class="about-icon">♡</div><div><span class="eyebrow">UN POQUITO DE AMOR EN CADA PLATO</span><h2>Sabores para todos los gustos</h2><p>Sweet Love reúne recetas inspiradas en diferentes culturas, opciones saludables y antojos dulces. Los platos y precios de esta maqueta son ilustrativos y pueden ajustarse al negocio real.</p></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#inicio"><span class="brand-icon">♡</span><span>Sweet <b>Love</b><small>UN VIAJE DE SABOR</small></span></a><p>Hecho con mucho 💗 y sabores del mundo.</p><span>© <span id="currentYear"></span> Sweet Love · Proyecto académico</span></div></footer>
+
+<div class="overlay" id="overlay" hidden></div>
+<aside class="cart-drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true"><div class="drawer-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2 id="cartTitle">Mi carrito ♡</h2></div><button class="icon-button" id="closeCart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-summary"><div class="summary-line"><span>Subtotal</span><b id="cartSubtotal">$0</b></div><div class="summary-line"><span>Domicilio</span><b>Por definir</b></div><div class="summary-line total-line"><span>Total productos</span><b id="cartTotal">$0</b></div><button class="btn btn-primary checkout-button" id="checkoutButton" disabled>Continuar con mi pedido</button><p class="cart-disclaimer">Al confirmar, enviaremos tu selección a WhatsApp para que puedas mandarnos el pedido.</p></div></aside>
+
+<section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true"><div class="modal-card"><button class="icon-button modal-close" id="closeCheckout" aria-label="Cerrar formulario">×</button><span class="modal-heart">💗</span><span class="eyebrow">UN ÚLTIMO PASITO</span><h2 id="checkoutTitle">Completa tu pedido</h2><p class="modal-intro">Completa tus datos y te llevaremos a WhatsApp con el pedido listo para enviar.</p><form id="checkoutForm" novalidate><label for="customerName">Nombre completo</label><input id="customerName" name="customerName" type="text" placeholder="¿Cómo te llamas?" required minlength="3"><small class="field-error" id="nameError"></small><label for="customerPhone">Tu celular (opcional)</label><input id="customerPhone" name="customerPhone" type="tel" placeholder="Ej. 3001234567" inputmode="numeric"><small class="field-error" id="phoneError"></small><label for="customerAddress">Dirección o lugar de entrega</label><textarea id="customerAddress" name="customerAddress" rows="2" placeholder="¿Dónde recibirías tu pedido?" required></textarea><small class="field-error" id="addressError"></small><button class="btn btn-primary form-submit" type="submit">Enviar pedido por WhatsApp ♡</button><p class="form-note">Al continuar se abrirá WhatsApp con los productos, cantidades y total. Solo tendrás que pulsar Enviar.</p></form></div></section>
+<section class="success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-hidden="true"><div class="modal-card success-card"><button class="icon-button modal-close" id="closeSuccess" aria-label="Cerrar confirmación">×</button><span class="success-icon">🎉</span><span class="eyebrow">¡QUÉ DELICIA!</span><h2 id="successTitle">Tu resumen está listo</h2><p id="successMessage"></p><div class="order-receipt" id="orderReceipt"></div><button class="btn btn-primary form-submit" id="finishOrder">¡Entendido, gracias! 💗</button><p class="form-note">Confirmación visual de demo. No se realizó ningún envío ni pago.</p></div></section>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body></html>

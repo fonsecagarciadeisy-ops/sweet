@@ -1,0 +1,13 @@
+SWEET LOVE — INICIO RAPIDO
+1. Descomprime sweet-love-proyecto.zip.
+2. Abre la carpeta sweet-love.
+3. Abre index.html en Chrome, Edge o Firefox.
+4. Conecta a internet para cargar fotografías de Unsplash y Google Fonts.
+5. Consulta README.md y EVIDENCIAS_Y_PRUEBAS.md.
+6. catalogo_productos.csv contiene los 30 productos, descripciones, acompañamientos, precios y enlaces de fotografía.
+
+Archivos principales: index.html, style.css y app.js.
+La aplicación es una demostración frontend: no procesa pagos ni envía pedidos a un servidor.
+
+PEDIDOS POR WHATSAPP:
+Al confirmar el pedido, se abre WhatsApp al +57 305 288 3408 con los productos, cantidades, total, nombre y dirección ya escritos. El cliente solo debe pulsar ENVIAR en WhatsApp.
